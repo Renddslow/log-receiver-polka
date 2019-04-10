@@ -4,7 +4,8 @@ const path = require('path');
 const pathname = path.join(__dirname, 'data.csv');
 
 module.exports = (req, res) => {
-	const log = req.query;
+	const logRaw = req.query.log;
+	const log = JSON.parse(logRaw);
 
 	fs.readFile(pathname, (err, data) => {
 		const logs = data.toString();
