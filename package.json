@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "polkadot": "^1.0.0"
+  },
+  "scripts": {
+    "start": "polkadot server.js"
+  }
+}
